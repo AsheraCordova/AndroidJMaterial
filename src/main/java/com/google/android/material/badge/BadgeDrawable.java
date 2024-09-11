@@ -504,8 +504,6 @@ case "gravity":
 return "center";
 case "typeface":
 return "sans";
-case "paddingHorizontal":
-return "1dp";
 case "alpha":
 return (float)state.getAlpha() / 255f;
 case "visibility":
@@ -527,7 +525,7 @@ updateBadgeCoordinates(anchorViewRef.get(),(FrameLayout)customBadgeParentRef.get
 return shapeDrawable.getBounds();
 }
 public java.lang.String[] getSimulatedWidgetAttrs(){
-return new String[]{"zIndex","textSize","gravity","text","typeface","textColor","background","paddingHorizontal","alpha","visibility","borderRadius","textAppearance","borderWidth"};
+return new String[]{"zIndex","textSize","gravity","text","typeface","textColor","background","alpha","visibility","borderRadius","textAppearance","borderWidth"};
 }
 public java.lang.String getSimulatedWidgetLocalName(){
 return r.android.widget.TextView.class.getSimpleName();

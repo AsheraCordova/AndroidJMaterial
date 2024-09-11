@@ -207,7 +207,7 @@ public static final class State {
     }
     badgeRadius=com.ashera.widget.PluginInvoker.convertDpToPixel("4dp");
     horizontalInset=0;
-    badgeWithTextRadius=com.ashera.widget.PluginInvoker.convertDpToPixel("8dp");
+    badgeWithTextRadius=com.ashera.widget.PluginInvoker.convertDpToPixel("10dp");
     badgeWidth=0;
     badgeHeight=0;
     badgeWithTextWidth=0;
@@ -215,7 +215,7 @@ public static final class State {
     horizontalInsetWithText=0;
     overridingState=storedState;
     this.currentState.numberLocale=Locale.getDefault();
-    this.currentState.badgeHorizontalPadding=0;
+    this.currentState.badgeHorizontalPadding=(int)com.ashera.widget.PluginInvoker.convertDpToPixel("4dp");
     this.currentState.badgeVerticalPadding=0;
     this.currentState.horizontalOffsetWithoutText=0;
     this.currentState.verticalOffsetWithoutText=0;
