@@ -16,6 +16,17 @@ public class BadgeUtils {
       anchor.getOverlay().add(badgeDrawable);
     }
   }
+  public static void detachBadgeDrawable(  BadgeDrawable badgeDrawable,  View anchor){
+    if (badgeDrawable == null) {
+      return;
+    }
+    if (badgeDrawable.getCustomBadgeParent() != null) {
+      badgeDrawable.getCustomBadgeParent().setForeground(null);
+    }
+ else {
+      anchor.getOverlay().remove(badgeDrawable);
+    }
+  }
   public static void setBadgeDrawableBounds(  BadgeDrawable badgeDrawable,  View anchor,  FrameLayout compatBadgeParent){
     Rect badgeBounds=new Rect();
     anchor.getDrawingRect(badgeBounds);
